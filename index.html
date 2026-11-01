@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LUXBAG — Premium Charm Sumkalar</title>
+  <link rel="icon" type="svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700;800&family=Manrope:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="loader" id="loader">
+    <div class="loader-logo">LUX<span>BAG</span></div>
+    <div class="loader-bar"><span></span></div>
+  </div>
+
+  <header class="header" id="header">
+    <a href="#home" class="logo"><i class="fa-solid fa-bag-shopping"></i> LUX<span>BAG</span></a>
+    <nav class="nav" id="nav">
+      <a href="#home" class="active">Bosh sahifa</a>
+      <a href="#about">Biz haqimizda</a>
+      <a href="#products">Mahsulotlar</a>
+      <a href="#reviews">Fikrlar</a>
+      <a href="#contact">Aloqa</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" id="cartBtn" aria-label="Savat">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+      <button class="icon-btn burger" id="burger" aria-label="Menyu"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <p class="eyebrow reveal">Yangi kolleksiya 2026</p>
+      <h1 class="reveal">Uslubingizni <span>ko'tarib</span> yuring</h1>
+      <p class="hero-text reveal">Qo'lda tikilgan, tabiiy charmdan yaratilgan premium sumkalar. Har bir chok — sifat va nafosat belgisi.</p>
+      <div class="hero-buttons reveal">
+        <a href="#products" class="btn btn-primary">Xarid qilish <i class="fa-solid fa-arrow-right"></i></a>
+        <a href="#about" class="btn btn-outline">Batafsil</a>
+      </div>
+      <div class="stats reveal">
+        <div><strong class="counter" data-target="12000">0</strong><span>Mijozlar</span></div>
+        <div><strong class="counter" data-target="350">0</strong><span>Modellar</span></div>
+        <div><strong class="counter" data-target="15">0</strong><span>Yillik tajriba</span></div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-down"><i class="fa-solid fa-chevron-down"></i></a>
+  </section>
+
+  <section class="features">
+    <div class="feature reveal"><i class="fa-solid fa-truck-fast"></i><h4>Bepul yetkazish</h4><p>Butun O'zbekiston bo'ylab</p></div>
+    <div class="feature reveal"><i class="fa-solid fa-shield-halved"></i><h4>2 yil kafolat</h4><p>Har bir mahsulotga</p></div>
+    <div class="feature reveal"><i class="fa-solid fa-gem"></i><h4>100% charm</h4><p>Tabiiy materiallar</p></div>
+    <div class="feature reveal"><i class="fa-solid fa-rotate-left"></i><h4>14 kun qaytarish</h4><p>Hech qanday savolsiz</p></div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="about-img reveal">
+      <img src="craft.jpg" alt="Usta charm sumka tikmoqda">
+      <div class="about-badge"><strong>15+</strong><span>yillik mahorat</span></div>
+    </div>
+    <div class="about-text reveal">
+      <p class="eyebrow">Biz haqimizda</p>
+      <h2>Har bir sumka — <span>qo'l mehnati</span></h2>
+      <p>LUXBAG ustaxonasida har bir sumka tajribali ustalar tomonidan qo'lda tikiladi. Biz eng sifatli Italiya charmini tanlaymiz va uni zamonaviy dizayn bilan birlashtiramiz.</p>
+      <ul class="about-list">
+        <li><i class="fa-solid fa-check"></i> Qo'lda mum surtilgan iplar</li>
+        <li><i class="fa-solid fa-check"></i> Zanglamaydigan oltin furnitura</li>
+        <li><i class="fa-solid fa-check"></i> Har bir mahsulot alohida tekshiriladi</li>
+      </ul>
+      <button class="btn btn-primary" id="storyBtn">Tariximiz <i class="fa-solid fa-play"></i></button>
+    </div>
+  </section>
+
+  <section class="products" id="products">
+    <div class="section-head reveal">
+      <p class="eyebrow">Kolleksiya</p>
+      <h2>Mashhur <span>mahsulotlar</span></h2>
+    </div>
+    <div class="filters reveal">
+      <button class="filter active" data-filter="all">Hammasi</button>
+      <button class="filter" data-filter="women">Ayollar</button>
+      <button class="filter" data-filter="men">Erkaklar</button>
+      <button class="filter" data-filter="travel">Sayohat</button>
+    </div>
+    <div class="grid" id="productGrid">
+      <article class="card reveal" data-cat="women">
+        <div class="card-img"><img src="hero (1).jpg" alt="Klassik sumka"><span class="tag">Yangi</span>
+          <button class="like" aria-label="Yoqtirish"><i class="fa-regular fa-heart"></i></button></div>
+        <div class="card-body"><h3>Aurora Classic</h3><div class="rating">★★★★★</div>
+          <div class="card-foot"><span class="price">1 450 000 so'm</span><button class="add" data-name="Aurora Classic" data-price="1450000"><i class="fa-solid fa-plus"></i></button></div></div>
+      </article>
+      <article class="card reveal" data-cat="men">
+        <div class="card-img"><img src="bag1.jpg" alt="Charm ryukzak">
+          <button class="like" aria-label="Yoqtirish"><i class="fa-regular fa-heart"></i></button></div>
+        <div class="card-body"><h3>Nomad Backpack</h3><div class="rating">★★★★★</div>
+          <div class="card-foot"><span class="price">1 190 000 so'm</span><button class="add" data-name="Nomad Backpack" data-price="1190000"><i class="fa-solid fa-plus"></i></button></div></div>
+      </article>
+      <article class="card reveal" data-cat="women">
+        <div class="card-img"><img src="bag2.jpg" alt="Qora tote sumka"><span class="tag">Top</span>
+          <button class="like" aria-label="Yoqtirish"><i class="fa-regular fa-heart"></i></button></div>
+        <div class="card-body"><h3>Noir Tote</h3><div class="rating">★★★★☆</div>
+          <div class="card-foot"><span class="price">990 000 so'm</span><button class="add" data-name="Noir Tote" data-price="990000"><i class="fa-solid fa-plus"></i></button></div></div>
+      </article>
+      <article class="card reveal" data-cat="travel">
+        <div class="card-img"><img src="bag3.jpg" alt="Sayohat sumkasi">
+          <button class="like" aria-label="Yoqtirish"><i class="fa-regular fa-heart"></i></button></div>
+        <div class="card-body"><h3>Voyager Duffel</h3><div class="rating">★★★★★</div>
+          <div class="card-foot"><span class="price">1 750 000 so'm</span><button class="add" data-name="Voyager Duffel" data-price="1750000"><i class="fa-solid fa-plus"></i></button></div></div>
+      </article>
+    </div>
+  </section>
+
+  <section class="banner reveal">
+    <div class="banner-inner">
+      <h2>Birinchi xaridga <span>-20%</span> chegirma</h2>
+      <p>Taklif tugashiga qoldi:</p>
+      <div class="timer" id="timer">
+        <div><strong id="d">00</strong><span>kun</span></div>
+        <div><strong id="h">00</strong><span>soat</span></div>
+        <div><strong id="m">00</strong><span>daqiqa</span></div>
+        <div><strong id="s">00</strong><span>soniya</span></div>
+      </div>
+      <a href="#products" class="btn btn-primary">Hoziroq olish</a>
+    </div>
+  </section>
+
+  <section class="reviews" id="reviews">
+    <div class="section-head reveal">
+      <p class="eyebrow">Mijozlar fikri</p>
+      <h2>Ular bizni <span>tanlashdi</span></h2>
+    </div>
+    <div class="slider reveal">
+      <div class="slides" id="slides">
+        <div class="review">
+          <img src="user1.jpg" alt="Madina">
+          <p>"Aurora Classic sumkasini oldim — sifati ajoyib! Charmning hidi va yumshoqligi haqiqiy premiumni his qildiradi."</p>
+          <h4>Madina Karimova</h4><span>Toshkent</span><div class="rating">★★★★★</div>
+        </div>
+        <div class="review">
+          <img src="user2.jpg" alt="Jasur">
+          <p>"Nomad ryukzagi bilan har kuni ishga boraman. Bir yil o'tdi, hali ham yangiday. Tavsiya qilaman!"</p>
+          <h4>Jasur Rahimov</h4><span>Samarqand</span><div class="rating">★★★★★</div>
+        </div>
+        <div class="review">
+          <img src="user3.jpg" alt="Elena">
+          <p>"Yetkazib berish juda tez bo'ldi, qadoqlash esa sovg'aday chiroyli. Noir Tote mening sevimli sumkam."</p>
+          <h4>Elena Sokolova</h4><span>Buxoro</span><div class="rating">★★★★★</div>
+        </div>
+      </div>
+      <button class="slide-btn prev" id="prev" aria-label="Oldingi"><i class="fa-solid fa-chevron-left"></i></button>
+      <button class="slide-btn next" id="next" aria-label="Keyingi"><i class="fa-solid fa-chevron-right"></i></button>
+      <div class="dots" id="dots"></div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="contact-info reveal">
+      <p class="eyebrow">Aloqa</p>
+      <h2>Biz bilan <span>bog'laning</span></h2>
+      <p><i class="fa-solid fa-location-dot"></i> Toshkent sh., Amir Temur ko'chasi 15</p>
+      <p><i class="fa-solid fa-phone"></i> +998 90 123 45 67</p>
+      <p><i class="fa-solid fa-envelope"></i> info@luxbag.uz</p>
+    </div>
+    <form class="form reveal" id="contactForm">
+      <input type="text" id="name" placeholder="Ismingiz" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <textarea id="message" rows="5" placeholder="Xabaringiz" required></textarea>
+      <button type="submit" class="btn btn-primary">Yuborish <i class="fa-solid fa-paper-plane"></i></button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <div>
+        <a href="#home" class="logo"><i class="fa-solid fa-bag-shopping"></i> LUX<span>BAG</span></a>
+        <p>Premium charm sumkalar — 2011 yildan beri.</p>
+      </div>
+      <form class="newsletter" id="newsletter">
+        <input type="email" placeholder="Emailingizni kiriting" required>
+        <button type="submit" class="btn btn-primary">Obuna</button>
+      </form>
+    </div>
+    <div class="socials">
+      <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://t.me" target="_blank" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+      <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="https://youtube.com" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+      <a href="https://tiktok.com" target="_blank" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+    </div>
+    <p class="copy">© 2026 LUXBAG. Barcha huquqlar himoyalangan.</p>
+  </footer>
+
+  <aside class="cart" id="cart">
+    <div class="cart-head"><h3>Savat</h3><button class="icon-btn" id="closeCart" aria-label="Yopish"><i class="fa-solid fa-xmark"></i></button></div>
+    <ul class="cart-items" id="cartItems"></ul>
+    <div class="cart-foot">
+      <p>Jami: <strong id="cartTotal">0 so'm</strong></p>
+      <button class="btn btn-primary" id="checkout">Buyurtma berish</button>
+    </div>
+  </aside>
+  <div class="overlay" id="overlay"></div>
+
+  <div class="modal" id="modal">
+    <div class="modal-box">
+      <button class="icon-btn modal-close" id="closeModal" aria-label="Yopish"><i class="fa-solid fa-xmark"></i></button>
+      <h3>Bizning tariximiz</h3>
+      <p>2011 yilda Toshkentdagi kichik ustaxonadan boshlangan yo'limiz bugun minglab mijozlar ishonchiga aylandi. Biz sifat, halollik va nafosatni birinchi o'ringa qo'yamiz.</p>
+    </div>
+  </div>
+
+  <button class="to-top" id="toTop" aria-label="Yuqoriga"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <script src="script.js"></script>
+</body>
+</html>
